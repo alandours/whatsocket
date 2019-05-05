@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('partials/head') %>
+    <link href="/css/chat.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+</head>
+<body>
+    <div class="phone">
+        <div class="screen">
+            <div class="header">
+                <%- include('partials/status') %>
+                <div class="user-data">
+                    <a href="/" class="back-btn"><span class="icon"></span></a>
+                    <img src="/img/user.jpg" alt="" class="profile-picture">
+                    <h1 class="display-name"><%= data.waiting %></h1>
+                    <div class="status"></div>
+                    <div class="actions">
+                        <div class="video"></div>
+                        <div class="call"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-window">
+            </div>
+            <div class="message-container">
+                <div class="add"></div>
+                <input type="text" class="message">
+                <button class="send-msg"><img src="/img/send.jpg" alt="Send message"></button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/chat.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('partials/head') %>
+    <link href="/css/user.css" rel="stylesheet">
+    <link href="/css/edit.css" rel="stylesheet">
+</head>
+<body>
+    <div class="phone">
+        <div class="screen config-screen">
+            <div class="header">
+                <%- include('partials/status') %>
+                <div class="edit-header">
+                    <a href="/" class="back-btn"><span class="icon"></span><%= data.menu.settings %></a>
+                    <h2><%= data.editProfile %></h2>
+                </div>
+            </div>
+            <div class="config-window">
+                <div class="user-section user-name">
+                    <div class="edit-photo">
+                        <a>
+                            <img src="/img/user.jpg" alt="User image" class="user-img">
+                            <%= data.edit %>
+                        </a>
+                        <p><%= data.nameDescription %></p>
+                    </div>
+                    <input type="text" name="name" class="edit-name" placeholder="<%= data.namePlaceholder %>">
+                </div>
+                <div class="user-section user-info">
+                    <label for="info"><%= data.about %></label>
+                    <input type="text" name="info" class="edit-info">
+                </div>
+            </div>
+            <%- include('partials/toolbar') %>
+        </div>
+    </div>
+    <script src="/js/edit.js" type="module"></script>
+</body>
+</html>

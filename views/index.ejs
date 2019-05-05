@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('partials/head') %>
+    <link href="/css/user.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
+</head>
+<body>
+    <div class="phone">
+        <div class="screen config-screen">
+            <div class="header">
+                <%- include('partials/status') %>
+                <h1 class="page-title"><%= data.menu.settings %></h1>
+            </div>
+            <div class="config-window">
+                <a href="/edit-info" class="user-section user-data">
+                    <img src="/img/user.jpg" alt="User image" class="user-img">
+                    <div>
+                        <h2 class="user-name"></h2>
+                        <p class="user-info"></p>
+                    </div>
+                    <img src="/img/click.png" alt="Editar perfil" class="user-edit">
+                </a>
+                <a href="/chat" class="user-section user-data">
+                    <img src="/img/whatsapp.png" alt="User image" class="new-chat-img">
+                    <p><%= data.new %></p>
+                    <img src="/img/click.png" alt="Editar perfil" class="user-edit">
+                </a>
+            </div>
+            <%- include('partials/toolbar') %>
+        </div>
+    </div>
+    <script src="/js/index.js" type="module"></script>
+</body>
+</html>

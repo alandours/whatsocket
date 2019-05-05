@@ -1,0 +1,72 @@
+.header{
+    height: 100%;
+    border-bottom: 1px solid #c7c7cb;
+}
+
+.config-window{
+    background: #efeff3;
+}
+
+    .user-section{
+        background: #fefefe;
+        border-top: 1px solid #c7c7cb;
+        border-bottom: 1px solid #c7c7cb;
+        color: #000;
+        display: flex;
+    }
+
+.toolbar{
+    background: #f7f7f7;
+    display: flex;
+    padding: 4px 4px 2px;
+    justify-content: space-around;
+    border-top: 1px solid #c7c7cb;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+    .toolbar div{
+        height: 100%;
+        width: 100%;
+    }
+
+    .toolbar a{
+        width: 600px;
+        max-height: 50px;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #929292;
+    }
+
+    .toolbar .active-menu{
+        color: var(--main-color)
+    }
+
+    .toolbar a:hover{
+        opacity: 0.75;
+    }
+
+    .toolbar img{
+        margin-bottom: 3px;
+        max-width: 76px;
+    }
+
+    .toolbar .hidden{
+        visibility: hidden;
+    }
+
+@media (min-height: 845px) and (min-width: 1000px){
+
+    .toolbar img{
+        width: 100%;
+    }
+
+    .toolbar{
+        position: static;
+    }
+}

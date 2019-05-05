@@ -1,0 +1,68 @@
+.page-title{
+    font-size: 2rem;
+    margin: 45px 17px 10px;
+}
+
+    .config-window{
+        height: 508px;
+    }
+
+    .new-chat-img{
+        width: 29px;
+        margin: 7px 16px;
+    }
+
+    .user-data{
+        margin: 52px 0;
+        align-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .user-data:hover{
+        background: #e7e7ec;
+        transition: ease 200ms;
+    }
+
+        .user-data div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+
+        .user-img{
+            border-radius: 100%;
+            width: 58px;
+            height: 58px;
+            margin: 8px 12px 8px 16px;
+        }
+
+        .user-name{
+            font-size: 1.25rem;
+            font-weight: 400;   
+        }
+
+        .user-info{
+            font-size: 0.875rem;
+        }
+
+        .user-edit{
+            width: 8px;
+            position: absolute;
+            right: 16px;
+        }
+
+        .header{
+            height: 150px;
+        }
+
+        .config-window{
+            height: 100%;
+        }
+
+@media (min-height: 845px) and (min-width: 1000px){
+    .header{
+        height: auto;
+    }
+}
