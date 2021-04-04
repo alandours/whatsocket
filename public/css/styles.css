@@ -64,7 +64,7 @@ input, button{
 
         .phone-info ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             transition: ease 300ms;
         }
 

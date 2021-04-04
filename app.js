@@ -40,7 +40,7 @@ const data = {
         namePlaceholder: 'Enter your name',
         about: 'ABOUT',
         unknown: 'Unknown',
-        carrier: 'Vodafone',
+        carrier: 'Carrier',
         menu: {
             status: 'Status',
             calls: 'Calls',
@@ -55,17 +55,17 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    const lang = req.acceptsLanguages('es') ? 'es' : 'en';
+    const lang = req.acceptsLanguages('en') ? 'en' : 'es';
     res.render('index', {data: data[lang]});
 });
 
 app.get('/getUserInfo', (req, res) => {
-    const lang = req.acceptsLanguages('es') ? 'es' : 'en';
+    const lang = req.acceptsLanguages('en') ? 'en' : 'es';
     res.send({data: data[lang]});
 });
 
 app.get('/edit-info', (req, res) => {
-    const lang = req.acceptsLanguages('es') ? 'es' : 'en';
+    const lang = req.acceptsLanguages('en') ? 'en' : 'es';
     res.render('edit', {data: data[lang]});
 });
 
@@ -75,7 +75,7 @@ app.get('/chat', (req, res) => {
 });
 
 app.get('/chat/:id', (req, res) => {
-    const lang = req.acceptsLanguages('es') ? 'es' : 'en';
+    const lang = req.acceptsLanguages('en') ? 'en' : 'es';
     res.render('chat', {data: data[lang]});
 });
 
