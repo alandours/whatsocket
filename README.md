@@ -1,7 +1,10 @@
 # WhatSocket
 
-Chat app made with Socket.io, Node.js and localStorage. Styled after Whatsapp. [Try it](https://whatsocket.herokuapp.com)
+Chat app made with Socket.io and Node.js. Styled after Whatsapp.
 
+[Demo](https://whatsocket.herokuapp.com)
+
+<img src="./preview.png" alt="Whatsocket preview" />
 
 ## Usage
 
@@ -17,7 +20,7 @@ Edit your profile info or start a new chat.
 
 #### Edit profile
 
-Change your name and about info. It will automatically be saved to localStorage.
+Change your name and about info. It will be saved to localStorage.
 
 #### New chat
 
